@@ -1,0 +1,57 @@
+
+
+.pepe {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 200%;
+    margin: 10px;
+    padding: 8px;
+}
+
+.conteiner h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.deportivas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.deportiva {
+    background: black;
+    padding: 1px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.deportiva img {
+    border-radius: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.deportiva h5 {
+    color: black;
+    background-color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.deportiva h6 {
+    background-color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+}

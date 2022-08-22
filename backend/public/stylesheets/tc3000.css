@@ -1,0 +1,602 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    }
+nav {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    height: 90px;
+    width: 100%;
+}
+
+.enlance {
+    position: absolute;
+    padding: 10px 50px;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 20px;
+}
+
+nav ul li a {
+
+    color: black;
+    font-size: 15px;
+    font-family: 'Arvo', serif;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+li a.active,
+li a:hover {
+    background: cornflowerblue;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: black;
+    float: right;
+    line-height: 90px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+main{
+    min-height: calc(100vh - 90px - 70px);
+
+}
+
+.holder {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.slider-frame {
+    width: 650px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 8px 8px;
+}
+
+.slider-frame ul {
+    position: relative;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.titulo h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo p {
+    text-align: center;
+    margin: 20px;
+}
+
+.messi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+footer {
+    height: 110px;
+    text-align: center;
+    justify-content: flex-end;
+    background-color: grey;
+    color: white;
+}
+.cami{
+    margin: 25px;
+}
+
+.grande {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 25px;
+    margin-top: auto;
+}
+
+/* fin inicio */
+
+/*comienzo insitucional */
+
+.pepe {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+.conteiner h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.deportivas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.deportiva {
+    background: black;
+    padding: 1px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.deportiva img {
+    border-radius: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.deportiva h5 {
+    color: black;
+    background-color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.deportiva h6 {
+    background-color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/*fin institucional*/
+/*comienzo pilotos */
+
+.titi {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 8px;
+}
+
+.contenedor {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.contenedor .card {
+    height: auto;
+    background-color:gray;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .card h4,
+h5 {
+    color: white;
+    background-color: gray;
+}
+
+/*fin pilotos*/
+/*comienzo Calendario */
+
+.moto {
+    justify-content: center;
+    text-align: center;
+}
+
+.Calendario {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+}
+
+.Calendario .info h4 {
+    color: red;
+    font-weight: 100;
+    font-style: italic;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.Calendario .info p {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.Calendario:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/*fin calendario*/
+/*comienzo fotos */
+
+.buri {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.buri img {
+    margin-top: 28px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria img {
+    border: 3px groove white;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    margin: 15px;
+    filter: grayscale(100%) drop-shadow(10px 10px 5px #000000);
+
+}
+
+.galeria img:hover {
+    filter: grayscale(0%);
+}
+
+/*fin fotos*/
+/*comienzo novedades*/
+
+.nono {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.novedades{
+    border: 3px groove black;
+    margin: 30px;
+    padding: 30px;
+}
+.novedades h4{
+    border-bottom: 3px solid #000000;
+}
+.novedades p{
+    margin: 10px;
+}
+.sentey{
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 10px;
+}
+#main-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    text-align: left;
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 20px;
+    width: 50px;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fin novedades*/
+/*comienzo contacto*/
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 4px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:952px) {
+    .enlance {
+        padding: left 20px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .slider-frame {
+        display: none;
+    }
+
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.activo {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .slider-frame {
+        display: none;
+        opacity: 0;
+    }
+
+    .titulo {
+        margin-top: 30px;
+    }
+
+    .messi img {
+        margin-top: 85px;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50px;
+        margin-left: 85px;
+    }
+
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .galeria img {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 230%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
