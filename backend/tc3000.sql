@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 31-08-2022 a las 05:31:05
+-- Tiempo de generación: 31-08-2022 a las 06:04:42
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -47,6 +47,28 @@ INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `img_id`, `cuerpo`) VALUES
 (3, 'Alianza Estratégica entre TC.3000 Y Radio 15', 'El Turismo Competición 3000 generó una alianza estratégica con Radio 15 para expandir la difusión de todas sus carreras.', '', 'Durante cada carrera, jornada semanal y en su programación, se llevarán a cabo distintas columnas informativas, con el objetivo de conectar de manera directa y rápida a los apasionados del TC.3000 con cada uno de los oyentes.'),
 (4, 'Se asoma una nueva estrella', 'El joven que demuestra su potencial en su temporada debut', '', 'Brian Burini estuvo muy cerca de llevarse todas las miradas este fin de semana: terminó en la segunda posición de la carrera Sprint y, de ese modo, se subió a un podio en la categoría por tercera vez en su pimer temporada (1° puesto en Monza y 3° en Australia).'),
 (6, 'Cumpleaños ', 'Burini llega a los 30', 'mlvopa7pg6pzqz6ttdsy', '                                                                        la categoria saluda a su piloto y le desea exitos en su vida');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
+(1, 'luciano', '81dc9bdb52d04dc20036dbd8313ed055'),
+(2, 'camila', '81dc9bdb52d04dc20036dbd8313ed055');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -18,6 +18,11 @@ form {
     box-shadow: 4px;
 }
 
+.holder p {
+    text-align: center;
+}
+
+
 h2 {
     color: black;
     text-align: center;
